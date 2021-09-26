@@ -1,0 +1,5 @@
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/100_customer_datamart_attributes_dedupe.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/100_customer_datamart_attributes_dedupe.log
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/110_customer_datamart_behavior_dedupe.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/110_customer_datamart_behavior_dedupe.log
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/120_customer_datamart_original.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/120_customer_datamart_original.log
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/130_customer_datamart.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/130_customer_datamart.log
+echo "Completed Customer Datamart Build"

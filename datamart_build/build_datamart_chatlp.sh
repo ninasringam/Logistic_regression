@@ -1,0 +1,11 @@
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/bounce_flag.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/bounce_flag.log
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/120_chatlp_features_bounce.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/120_chatlp_features_bounce.log
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/130_chatlp_features_intent.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/130_chatlp_features_intent.log 
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/140_chatlp_features_agent_score.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/140_chatlp_features_agent_score.log 
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/150_chatlp_datamart_event_final.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/150_chatlp_datamart_event_final.log 
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/160_chatlp_datamart_customer.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/160_chatlp_datamart_customer.log 
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/200_chatlp_hive_csv_extract_table_prep.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/200_chatlp_hive_csv_extract_table_prep.log 
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/300_chatlp_intensity_score.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/300_chatlp_intensity_score.log 
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/310_chatlp_nature_score.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/310_chatlp_nature_score.log 
+hive --hiveconf hive.tez.container.size=10240 yarn.scheduler.minimum-allocation-mb=1g -f /homes/s_zw_o_vz_do_pw/qes/chatlp/311_chatlp_nature_dataprep.hql 2>/homes/s_zw_o_vz_do_pw/qes/chatlp/logs/311_chatlp_nature_dataprep.log  
+echo "Completed Chatlp Datamart Build"
